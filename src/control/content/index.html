@@ -23,4 +23,15 @@
     <div id="mount"></div>
 
 </body>
+<script>
+    function registerEvents() {
+      buildfire.analytics.registerEvent({
+          title: "Nearby Professionals Opened",
+          key: "GPS_CONTACTS",
+          description: "When a user uses the GPS to find nearby professionals"
+      }, { silentNotification: false });
+  }
+
+  registerEvents();
+</script>
 </html>
